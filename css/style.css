@@ -68,6 +68,8 @@ h3 { font-size: var(--fs-h3) }
 .logo--img{
     width: 90px;
     height: 90px;
+    z-index: 2;
+    
 
 }
 

@@ -16,37 +16,54 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/net.css">
-    <link rel="stylesheet" href="css/ref.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
+    <!--section class="main-title">
+        <nav class="navigation">
+            <ul class="nav_list">
+                <li class="nav__item"> <a href="#home">Home</a></li>
+                <li class="nav__item"> <a href="#problems">Problems</a></li>
+                <li class="nav__item"> <a href="#solutions">Our Solutions</a></li>
+                <li class="nav__item"> <a href="#about">About us</a></li>
+        
+            </ul>
+        </nav>
+   </section> -->
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span></a>
 
-    
-    <div class="network">
-        <canvas id=c></canvas>
-        <script src="network.js"></script>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Nice</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <header class = "top">
+    <header>
         <div class="logo">
             <img class="logo--img" src="images/tempLogo.png" alt="">
         </div>
         <button class="nav-button">
             <span class="hamburger"></span>
         </button>
-        <nav class="navi">
-            <ul class="nav_list">
-                <li class="nav__item"> <a href="#home">Home</a></li>
-                <li class="nav__item"> <a href="#problems">Problems</a></li>
-                <li class="nav__item"> <a href="#solutions">Our Solutions</a></li>
-                <li class="nav__item"> <a href="#about">About us</a></li>
-
-            </ul>
-        </nav>
-        
-
+        <canvas id=c></canvas>
+        <script src="network.js"></script>
     </header>
-
     <!-- Intro and Overview-->
     <section class="intro" id="home">
         <h1 class="title title--intro">
@@ -54,6 +71,10 @@
         </h1>
 
         <!-- <p class="subtitle subtitle--intro">Overview of our project</p> -->
+
+
+
+
 
     </section>
 
@@ -88,7 +109,7 @@
         <h2 class="title"> Our ideas</h2>
         <div class="soln">
             <a href="#" class=soln__item>
-                <img src="https://source.unsplash.com/user/erondu/100x300">
+                <img src="https://source.unsplash.com/user/erondu/100x300" class=soln__img>
             </a>
             <a href="#" class=soln__item>
                 <img src="https://source.unsplash.com/user/erondu/100x300" class=soln__img>
@@ -122,7 +143,6 @@
 
         </div>
     </section>
-    
 
     <footer>
         <!-- replace with your own email address -->

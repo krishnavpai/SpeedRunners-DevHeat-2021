@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: #007AF3;
+  --primary-color: #8745dd;
 }
 
 body {
@@ -22,7 +22,9 @@ body {
 }
 
 .navbar .logo span {
-  color: var(--primary-color);
+   color: var(--primary-color);
+  /*text-shadow: 1px 1px 5px #fff;*/
+  
 }
 
 .navbar nav {

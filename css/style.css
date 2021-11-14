@@ -14,8 +14,8 @@
     --fw-bold: 900;
     
     --clr-light: rgb(29, 28, 77);
-    --clr-dark: #b985e4;
-    --clr-accent: #939df7;
+    --clr-dark: #d4bbe9;
+    --clr-accent: #934dc2;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -145,4 +145,6 @@ nav { display: none; }
         width: calc(100% + 1.5em);
     }
 }
+
+
 

@@ -20,5 +20,6 @@ canvas {
 .imagestyle{
 	width: 2000px;
 	height: 250px;
+	border-radius: 15px;
 
 }

@@ -65,12 +65,18 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
-.logo--img{
-    width: 90px;
-    height: 90px;
+.logo{
+        z-index: 3;
+}
+.navi{
     z-index: 2;
-    
+}
 
+.ani{
+    z-index: -1;
+}
+.top{
+    z-index: 2;
 }
 
 
@@ -127,10 +133,7 @@ nav { display: none; }
         position: relative;
         z-index: 2;
     }
-    .moto{
-        font-size: 20px !important
-
-    }    
+       
     
     .subtitle--intro {
         align-self: start;

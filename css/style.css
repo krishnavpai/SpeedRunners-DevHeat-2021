@@ -31,6 +31,7 @@
 }
 
 body {
+    padding: auto;
   background: var(--clr-light);
   color: var(--clr-dark);
   margin: 0;
@@ -86,6 +87,12 @@ h3 {
   margin-top: 0.5em;
   position: relative;
   margin-bottom: 0.25em;
+}
+.the-problem{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .title--intro {

@@ -30,6 +30,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     padding: auto;
   background: var(--clr-light);
@@ -72,6 +76,12 @@ h3 {
 .logo {
   z-index: 3;
 }
+.bgpattern{
+  display: block;
+  margin: auto;
+  padding: auto;
+}
+
 
 .nav {
   position: fixed;
@@ -82,12 +92,14 @@ h3 {
   left: 0;
   right: 0;
   z-index: 100;
+  overflow: hidden;
   
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .nav__list {
+  overflow: hidden;
   list-style: none;
   display: flex;
   height: 100%;
@@ -120,21 +132,47 @@ h3 {
   z-index: 1000;
 }
 
-.hamburger {
-  display: block;
-  position: relative;
+.nav-open .nav {
+  z-index: 1000;
+  transform: translateX(0%);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+  z-index: 2000;
+}
+
+.nav-open .hamburger {
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+
+.hamburger {  /* position: fixed; */
+  
+  display: block;  
+  position: fixed;
+  top: 2;
+  right: 24px;
+
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-accent);
-  width: 2em;
-  height: 3px;
+  background: white;
+  width: 3em;
+  height: 4px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
 }
-
 
 .hamburger::before,
 .hamburger::after {
@@ -146,6 +184,7 @@ h3 {
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
+
 
 .top {
   z-index: 2;
@@ -161,14 +200,23 @@ h3 {
     position: relative;
     flex-wrap: wrap;
     gap: 5px;
+   margin: auto;
+   padding: auto;
 }
 
 .title--intro {
+  position: relative;
+  text-align: left;
+  padding: 4px;
   font-weight: var(--fw-reg);
 }
 
 .title--intro strong {
   display: block;
+}
+.intro{
+  padding-top: 1em;
+  text-align: left;
 }
 
 .subtitle {
@@ -183,9 +231,7 @@ h3 {
   font-family: var(--ff-secondary);
 }
 
-nav {
-  display: none;
-}
+
 
 .intro {
   position: relative;
@@ -235,6 +281,8 @@ nav {
   color: rgb(30, 30, 110);
 }
 .my-probs {
+  position: relative;
+  padding-top: 2em;
   background-color: var(--clr-dark);
   background-image: url("images\2.png");
   background-size: cover;
@@ -273,4 +321,8 @@ nav {
   .prob + .prob {
       margin-left: 2em;
   }
+}
+
+.solutions{
+  padding-top: 2em;
 }

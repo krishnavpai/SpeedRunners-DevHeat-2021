@@ -18,7 +18,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 .navbar .logo span {
@@ -135,6 +135,7 @@ ul.features-list li:before {
 }
 
 .testimonials-section {
+  padding-top: 2em;
   background: var(--primary-color);
   color: white;
 }
@@ -199,7 +200,7 @@ nav.menu-btn {
   display: block;
 }
 
-nav {
+/* nav {
   position: fixed;
   z-index: 999;
   width: 66%;
@@ -208,11 +209,11 @@ nav {
   background: #20272E;
   height: 100vh;
   padding: 1em;
-}
-
+} */
+/* 
 nav ul.primary-nav {
   margin-top: 5em;
-}
+} */
 
 nav li a {
   color: white;

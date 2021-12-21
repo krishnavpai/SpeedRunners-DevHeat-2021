@@ -166,7 +166,7 @@ h3 {
 .hamburger::before,
 .hamburger::after {
   background: white;
-  width: 3em;
+  width: 2em;
   height: 4px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
@@ -204,13 +204,31 @@ h3 {
 
 .title--intro {
   position: relative;
-  text-align: left;
-  padding: 4px;
+  text-align: center;
+  padding: 2px;
   font-weight: var(--fw-reg);
 }
 
+.typed{
+  font-size:2.5rem;
+  font-weight: normal;
+  color: white;
+}
+.cursor{
+  font-size: 0.5em;
+  display: inline-block;
+  width: 1px;
+  background-color: #fff;
+  animation: blink .75s infinite;
+}
+@keyframes blink {
+  0%{background-color: #fff;}
+  50%{background-color: transparent;}
+  100%{background-color: #fff;}
+}
+
 .title--intro strong {
-  display: block;
+  display: inline-block;
 }
 .intro{
   padding-top: 1em;
